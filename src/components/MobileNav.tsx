@@ -7,20 +7,16 @@ import { CiMenuFries } from "react-icons/ci";
 
 const links = [
   {
-    name: "home",
+    name: "about",
     path: "/",
   },
   {
-    name: "about",
-    path: "/about",
+    name: "skills",
+    path: "/skills",
   },
   {
     name: "work",
     path: "/work",
-  },
-  {
-    name: "resume",
-    path: "/resume",
   },
   {
     name: "contact",

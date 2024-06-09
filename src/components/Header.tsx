@@ -1,18 +1,16 @@
 import Link from "next/link";
-import { Button } from "./button";
 
 //components
-import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
     <header className="py-8 xl:py-12 text-white">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container px-48">
         {/* logo */}
         
         <Link href={"/"}>
-          <h1 className="text-4xl font-semibold">
+          <h1 className="text-5xl font-bold">
             sidlakhani<span className="text-accent">;</span>
           </h1>
         </Link>

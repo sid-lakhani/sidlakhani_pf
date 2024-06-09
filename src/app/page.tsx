@@ -1,33 +1,56 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
-
+import Image from "next/image";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 //components
-import HomeText from "@/components/ui/HomeText";
-import Nav from "@/components/ui/Nav";
 
 export default function Home() {
   return (
-    <main>
-      <div className="flex flex-row gap-20 mx-32">
-        <div className="h-[600px] w-1/3 mt-8">
-          <div className="mt-8">
-            <HomeText text="Hi," />
-            <HomeText text="I am Siddhesh Lakhani!" />
-            <HomeText text="A Website Developer." />
-          </div>
-          <div className="flex flex-row gap-8 justify-center mt-12">
-            <Button className="w-36 text-md bg-accent text-black hover:opacity-80 hover:bg-accent duration-300 transition-all">Hire Me</Button>
-            <Button className="w-36 text-md bg-inherit border-2 border-accent hover:opacity-90 hover:bg-accent hover:text-black duration-300 transition-a">Resume</Button>
-          </div>
-          <Nav />
-        </div>
-        <div className="h-[600px] w-2/3 border-2 border-white rounded-xl">
-          Display
+    <div className="h-max min-h-[600px] md:col-span-4 border-2 border-white rounded-3xl">
+      <div className="mt-16 mx-32 grid grid-cols-2 items-center gap-4">
+        <Image
+          src="/me-square.jpg"
+          alt="Siddhesh Lakhani"
+          width={200}
+          height={200}
+          className="rounded-2xl"
+        />
+        <div className="grid grid-col gap-2 text-md font-light">
+          <Link
+            key="instagram"
+            href="https://instagram.com/sidlakhani_"
+            className="bg-white hover:bg-accent duration-300 transition-colors text-black px-2 rounded-xl w-max"
+          >
+            <FaInstagram className="inline-block" /> @sidlakhani_
+          </Link>
+          <Link
+            key="github"
+            href="https://github.com/sid-lakhani"
+            className="bg-white hover:bg-accent duration-300 transition-colors text-black px-2 rounded-xl w-max"
+          >
+            <FaGithub className="inline-block" /> github.com/sid-lakhani
+          </Link>
+          <Link
+            key="linkedin"
+            href="https://linkedin.com/in/siddhesh-lakhani"
+            className="bg-white hover:bg-accent duration-300 transition-colors text-black px-2 rounded-xl w-max"
+          >
+            <FaLinkedin className="inline-block" /> @siddhesh-lakhani
+          </Link>
         </div>
       </div>
-    </main>
+      <div className="m-16 mx-24 text-xl font-light items center text-justify">
+          <p className="">
+            I'm a Computer Engineering student with a 
+            passion for coding and a keen interest in new 
+            technologies. My journey into the world of web
+            development is just beginning, and I'm excited 
+            to share it with you.
+          </p>
+        </div>
+    </div>
   );
 }
- 

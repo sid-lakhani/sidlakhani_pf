@@ -1,10 +1,12 @@
+'use client';
+
 import { motion } from "framer-motion";
 import React from "react";
 
-const HomeText = ({ text }: { text: string }) => {
+const AnimationText = ({ text }: { text: string }) => {
   const words = text.split(" ");
   const accentWords = ["Siddhesh", "Lakhani!"];
-  const underlineWords = ["Website", "Developer."];
+  const underlineWords = ["Full-Stack", "Engineer."];
 
   // Variants for Container of words.
   const container = {
@@ -80,11 +82,11 @@ const HomeText = ({ text }: { text: string }) => {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="mb-4 text-3xl space-x-3"
+      className="mb-4 text-4xl space-x-1"
     >
       {processedWords}
     </motion.div>
   );
 };
 
-export default HomeText;
+export default AnimationText;
