@@ -16,6 +16,7 @@ const config = {
     },
     fontFamily: {
       primary: "var(--font-jetbrains)",
+      secondary: "var(--font-zeyada)",
     },
     extend: {
       colors: {

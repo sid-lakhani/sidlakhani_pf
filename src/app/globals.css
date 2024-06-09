@@ -7,3 +7,16 @@
     @apply font-primary bg-secondary text-white leading-loose ;
   }
 }
+
+:root {
+  --font-jetbrains: 'JetBrains Mono', monospace;
+  --font-zeyada: 'Zeyada', cursive;
+}
+
+.font-jetbrains {
+  font-family: var(--font-jetbrains);
+}
+
+.font-architects {
+  font-family: var(--font-architects);
+}

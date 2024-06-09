@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono, Zeyada } from "next/font/google";
 import "./globals.css";
 
 //components
@@ -16,6 +16,12 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains",
 });
 
+const zeyada = Zeyada({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-architects",
+});
+
 export const metadata: Metadata = {
   title: "sidlakhani",
 };
@@ -27,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jetbrainsMono.className}>
+      <body className={`${jetbrainsMono.variable} ${zeyada.variable}`}>
         <Header />
         <PageEffect />
         <PageTransition>
@@ -35,9 +41,9 @@ export default function RootLayout({
             <div className="grid md:grid-cols-7 gap-0 mx-32">
               <div className="md:col-span-3 h-max mt-8 pl-8">
                 <div className="mt-8 font-semibold">
-                  <AnimationText text="Hi," />
-                  <AnimationText text="I am Siddhesh Lakhani!" />
-                  <AnimationText text="A Full-Stack Engineer." />
+                  <AnimationText text="Hi," className="font-architects" />
+                  <AnimationText text="I am Siddhesh Lakhani!" className="font-architects" />
+                  <AnimationText text="A Full-Stack Engineer." className="font-jetbrains" />
                 </div>
                 <div className="flex flex-row gap-8 mt-12 ml-8 font-medium">
                   <Button className="w-36 text-md bg-accent text-black hover:opacity-80 hover:bg-accent duration-300 transition-all">
