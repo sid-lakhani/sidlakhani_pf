@@ -9,8 +9,8 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="h-max min-h-[600px] md:col-span-4 border-2 border-white rounded-3xl">
-      <div className="mt-16 mx-32 grid grid-cols-2 items-center gap-4">
+    <div className="h-max min-h-[600px] md:col-span-4 border-2 border-white rounded-3xl items-center justify-between">
+      <div className="mt-20 mx-32 grid grid-cols-2 items-center gap-4">
         <Image
           src="/me-square.jpg"
           alt="Siddhesh Lakhani"
@@ -22,27 +22,27 @@ export default function Home() {
           <Link
             key="instagram"
             href="https://instagram.com/sidlakhani_"
-            className="bg-white hover:bg-accent duration-300 transition-colors text-black px-2 rounded-xl w-max"
+            className="bg-white hover:bg-accent duration-300 transition-colors text-black px-2 rounded-lg w-max"
           >
             <FaInstagram className="inline-block" /> @sidlakhani_
           </Link>
           <Link
             key="github"
             href="https://github.com/sid-lakhani"
-            className="bg-white hover:bg-accent duration-300 transition-colors text-black px-2 rounded-xl w-max"
+            className="bg-white hover:bg-accent duration-300 transition-colors text-black px-2 rounded-lg w-max"
           >
             <FaGithub className="inline-block" /> github.com/sid-lakhani
           </Link>
           <Link
             key="linkedin"
             href="https://linkedin.com/in/siddhesh-lakhani"
-            className="bg-white hover:bg-accent duration-300 transition-colors text-black px-2 rounded-xl w-max"
+            className="bg-white hover:bg-accent duration-300 transition-colors text-black px-2 rounded-lg w-max"
           >
             <FaLinkedin className="inline-block" /> @siddhesh-lakhani
           </Link>
         </div>
       </div>
-      <div className="m-16 mx-24 text-xl font-light items center text-justify">
+      <div className="m-16 mx-28 text-xl font-light items center text-justify">
           <p className="">
             I'm a Computer Engineering student with a 
             passion for coding and a keen interest in new 
