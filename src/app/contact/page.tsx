@@ -4,11 +4,11 @@ import { IoIosMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 
-export default function Resume() {
+export default function Contact() {
   return (
       <main className="h-max min-h-[600px] md:col-span-4 border-2 border-white rounded-3xl items-center justify-between">
         <div className="flex flex-col items-center mt-12">
-          <h1 className="text-left text-3xl md:text-4xl bg-accent rounded-lg p-2 text-primary font-secondary">Connect With Me!</h1>
+          <h1 className="text-3xl md:text-4xl bg-accent rounded-lg p-2 text-primary font-secondary">Connect With Me!</h1>
           <div className="flex justify-evenly flex-col mt-4 bg-french-beige bg-opacity-40 rounded-lg h-36 w-2/3">
             <div className="flex flex-row gap-2">
               <FaLocationDot className="text-2xl text-white" />
