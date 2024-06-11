@@ -14,7 +14,7 @@ export default function Work() {
   return (
     <div className="h-max min-h-[600px] md:col-span-4 flex-col items-center justify-between mt-24">
       <Tabs defaultValue="projects" className="w-full">
-        <TabsList className="flex justify-center">
+        <TabsList className="flex justify-center gap-2">
           <TabsTrigger value="projects" className="px-4 text-md rounded-lg">
             Projects
           </TabsTrigger>
