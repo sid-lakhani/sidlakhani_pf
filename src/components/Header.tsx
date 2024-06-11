@@ -5,31 +5,19 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="pt-8 md:pt-12 text-white fixed">
-      <div className="container px-48">
-        {/* logo */}
-        
+    <header className="p-8 md:pt-12 text-white fixed w-full top-0 left-0">
+      <div className="container flex justify-between items-center px-4 md:px-48">
         <Link href={"/"}>
-          <h1 className="text-6xl font-bold">
-            sidlakhani<span className="text-accent">;</span>
-          </h1>
+          <div className="flex items-center">
+            <h1 className="text-5xl md:text-6xl font-bold">
+              sidlakhani<span className="text-accent">;</span>
+            </h1>
+          </div>
         </Link>
 
-        {/* desktop nav & hire me*/}
-
-        {/* <div className="hidden xl:flex items-center gap-8">
-          <Nav />
-          <Link href={"/contact"}>
-            <Button>Hire Me</Button>
-          </Link>
-        </div> */}
-
-        {/* mobile nav */}
-
-        <div className="xl:hidden">
-            <MobileNav />
+        <div className="md:hidden">
+          <MobileNav />
         </div>
-
       </div>
     </header>
   );

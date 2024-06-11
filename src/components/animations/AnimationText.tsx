@@ -61,7 +61,7 @@ const AnimationText = ({ text }: { text: string }) => {
           {underlinePhrase}
         </motion.span>
       );
-      i += underlineWords.length - 1; // Skip the next words that are part of the phrase
+      i += underlineWords.length - 1;
     } else {
       processedWords.push(
         <motion.span
@@ -82,7 +82,7 @@ const AnimationText = ({ text }: { text: string }) => {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="mb-4 text-4xl space-x-1"
+      className="mb-4 text-2xl md:text-4xl space-x-1"
     >
       {processedWords}
     </motion.div>

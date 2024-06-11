@@ -29,16 +29,16 @@ const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-accent" />
+        <CiMenuFries className="text-[40px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* logo */}
-        <div className="text-3xl">
+        <div className="text-4xl">
           sl<span className="text-accent">;</span>
         </div>
 
         {/* nav */}
-        <nav className="flex flex-col gap-8 ">
+        <nav className="flex flex-col gap-8 mt-10">
           {links.map((link, index) => {
             return (
               <Link
