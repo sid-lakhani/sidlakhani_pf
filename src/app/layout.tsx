@@ -39,7 +39,7 @@ export default function RootLayout({
         <PageTransition>
           <main>
             <div className="grid md:grid-cols-7 gap-0 mx-32 mt-8">
-              <div className="md:col-span-3 h-max pl-8 mt-4">
+              <div className="md:col-span-3 h-max pl-8 mt-40">
                 <div className="mt-8 font-semibold">
                   <AnimationText text="Hi," />
                   <AnimationText text="I am Siddhesh Lakhani!" />

@@ -15,13 +15,13 @@ export default function Skills() {
   };
 
   return (
-    <main className="h-max min-h-[600px] md:col-span-4 border-2 border-white rounded-3xl flex flex-col items-center justify-between">
+    <main className="h-max min-h-[600px] md:col-span-4 flex-col items-center justify-between mt-16">
       <div className="flex flex-col items-center">
         <AnimatePresence mode="wait">
           {showTechnicalSkills ? (
             <motion.div
               key="technical"
-              initial={{ opacity: 0, y: -20 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.5 }}
@@ -33,7 +33,7 @@ export default function Skills() {
               key="soft"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }}
+              exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5 }}
             >
               <SoftSkills />

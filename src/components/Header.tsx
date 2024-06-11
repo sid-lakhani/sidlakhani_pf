@@ -5,7 +5,7 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="pt-8 xl:pt-16 text-white">
+    <header className="pt-8 md:pt-12 text-white fixed">
       <div className="container px-48">
         {/* logo */}
         

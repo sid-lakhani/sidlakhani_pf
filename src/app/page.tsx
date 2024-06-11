@@ -2,14 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 //components
 
 export default function Home() {
   return (
-    <div className="h-max min-h-[600px] md:col-span-4 border-2 border-white rounded-3xl items-center justify-between">
+    <div className="h-max min-h-[600px] md:col-span-4 border-2 border-white rounded-3xl items-center justify-between mt-24">
       <div className="mt-20 mx-32 grid grid-cols-2 items-center gap-4">
         <Image
           src="/me-square.jpg"
@@ -39,6 +37,13 @@ export default function Home() {
             className="bg-white hover:bg-accent duration-300 transition-colors text-black px-2 rounded-lg w-max"
           >
             <FaLinkedin className="inline-block" /> @siddhesh-lakhani
+          </Link>
+          <Link
+            key="buymeacupofcoffee"
+            href="https://www.buymeacoffee.com/sidlakhani"
+            className="flex flex-row items-center gap-3 bg-white hover:bg-accent duration-300 transition-colors text-black px-2 rounded-lg w-max"
+          >
+            <Image src="/bmc_logo.png" alt="bmc" height={13} width={13} className="ml-1"/> @sidlakhani
           </Link>
         </div>
       </div>
