@@ -42,7 +42,7 @@ export default function Skills() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.1 }}
+            transition={{ duration: 0.5 }}
           >
             <Button
               className="p-4 py-4 mt-4 mb-[-20px] text-2xl rounded-3xl border-2 border-white"
