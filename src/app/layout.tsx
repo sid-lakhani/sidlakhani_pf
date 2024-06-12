@@ -38,14 +38,14 @@ export default function RootLayout({
         <PageEffect />
         <PageTransition>
           <main>
-            <div className="grid md:grid-cols-7 gap-4 mx-32 mt-8">
-              <div className="md:col-span-3 h-max md:pl-8 mt-40">
+            <div className="grid md:grid-cols-7 gap-4 mx-16 md:mx-32 mt-8">
+              <div className="md:col-span-3 h-max md:pl-8 mt-24 md:mt-40">
                 <div className="md:mt-8 font-semibold">
                   <AnimationText text="Hi," />
                   <AnimationText text="I am Siddhesh Lakhani!" />
                   <AnimationText text="A Full-Stack Engineer." />
                 </div>
-                <div className="flex flex-row gap-8 mt-12 ml-8 font-medium">
+                <div className="flex flex-row gap-8 mt-8 md:mt-12 md:ml-8 font-medium">
                   <Button className="w-36 text-md bg-accent text-black hover:opacity-80 hover:bg-accent duration-300 transition-all">
                     Hire Me
                   </Button>
