@@ -7,16 +7,16 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="h-max min-h-[400px] md:min-h-[600px] md:col-span-4 border-2 border-white rounded-3xl items-center justify-between mt-4 md:mt-24">
-      <div className="m-4 md:mt-20 md:mx-32 grid md:grid-cols-2 items-center gap-4">
+    <div className="h-max min-h-[400px] md:min-h-[600px] md:col-span-4 md:border-2 border-white rounded-3xl items-center justify-between mt-4 md:mt-24">
+      <div className="mt-2 md:mt-20 md:mx-32 grid grid-cols-2 items-center md:gap-8">
         <Image
           src="/me-square.jpg"
           alt="Siddhesh Lakhani"
-          width={200}
-          height={200}
-          className="rounded-2xl"
+          width={180}
+          height={180}
+          className="rounded-2xl md:w-[250px] md:h-[250px]"
         />
-        <div className="grid grid-rows-4 gap-2 text-md font-light">
+        <div className="grid grid-rows-4 gap-3 text-md font-light">
           <Link
             key="instagram"
             href="https://instagram.com/sidlakhani_"
@@ -29,7 +29,7 @@ export default function Home() {
             href="https://github.com/sid-lakhani"
             className="bg-white hover:bg-accent duration-300 transition-colors text-black px-2 rounded-lg w-max"
           >
-            <FaGithub className="inline-block" /> github.com/sid-lakhani
+            <FaGithub className="inline-block" /> @sid-lakhani
           </Link>
           <Link
             key="linkedin"
@@ -54,7 +54,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="md:m-16 m-6 md:mx-28 text-lg md:text-xl font-light items center text-justify">
+      <div className="md:m-8 m-6 md:mx-28 text-lg md:text-xl font-light items center text-justify">
         <p className="">
           I'm a Computer Engineering student with a passion for coding and a
           keen interest in new technologies. My journey into the world of web
