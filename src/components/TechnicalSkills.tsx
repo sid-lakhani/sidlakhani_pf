@@ -49,7 +49,7 @@ const skills = [
 
 const SkillsCard = () => {
   return (
-    <div className="grid md:grid-cols-3 m-8 gap-8">
+    <div className="xl:grid grid-cols-3 my-12 gap-x-8 gap-y-10">
       {skills.map((skill, index) => {
         return (
           <Card key={index} className="border-2 border-white bg-primary bg-opacity-80 rounded-xl hover:scale-110 duration-300 transform-gpu">

@@ -82,7 +82,7 @@ const AnimationText = ({ text }: { text: string }) => {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="mb-4 text-2xl md:text-4xl space-x-1"
+      className="mb-4 text-2xl xl:text-4xl space-x-1"
     >
       {processedWords}
     </motion.div>

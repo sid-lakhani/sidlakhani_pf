@@ -38,18 +38,18 @@ export default function RootLayout({
         <PageEffect />
         <PageTransition>
           <main>
-            <div className="grid md:grid-cols-7 gap-4 mx-16 md:mx-32 mt-8">
-              <div className="md:col-span-3 h-max md:pl-8 mt-24 md:mt-40">
-                <div className="md:mt-8 font-semibold">
+            <div className="xl:grid grid-cols-7 flex flex-col items-center xl:items-start text-center xl:text-left justify-center xl:justify-normal gap-4 mx-16 xl:mx-32 mt-8">
+              <div className="xl:col-span-3 h-max xl:pl-8 mt-24 xl:mt-40">
+                <div className="xl:mt-8 font-semibold">
                   <AnimationText text="Hi," />
                   <AnimationText text="I am Siddhesh Lakhani!" />
                   <AnimationText text="A Full-Stack Engineer." />
                 </div>
-                <div className="flex flex-row gap-8 mt-8 md:mt-12 md:ml-8 font-medium">
-                  <Button className="w-36 text-md bg-accent text-black hover:opacity-80 hover:bg-accent duration-300 transition-all">
+                <div className="flex flex-row gap-8 mt-8 xl:mt-12 xl:ml-8 font-medium">
+                  <Button className="w-36 text-xl bg-accent text-black hover:opacity-80 hover:bg-accent duration-300 transition-all">
                     Hire Me
                   </Button>
-                  <Button className="w-36 text-md bg-inherit text-accent border-4 border-accent hover:opacity-90 hover:bg-accent hover:text-black duration-200 transition-a">
+                  <Button className="w-36 text-xl bg-inherit text-accent border-4 border-accent hover:opacity-90 hover:bg-accent hover:text-black duration-200 transition-a">
                     Resume
                   </Button>
                 </div>
