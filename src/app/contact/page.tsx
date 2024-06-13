@@ -7,9 +7,9 @@ import { IoIosMail } from "react-icons/io";
 
 export default function Contact() {
   return (
-    <main className="h-max min-h-[600px] md:col-span-4 items-center justify-between mt-12">
+    <main className="h-max min-h-[600px] xl:col-span-4 items-center justify-between mt-12">
       <div className="flex flex-col items-center mt-12">
-        <h1 className="text-3xl md:text-4xl bg-accent rounded-lg p-2 text-primary font-secondary">
+        <h1 className="text-3xl xl:text-4xl bg-accent rounded-lg p-2 text-primary font-secondary">
           Connect With Me!
         </h1>
         <div className="flex justify-evenly flex-col mt-4 bg-french-beige bg-opacity-40 rounded-lg h-36 w-2/3">
