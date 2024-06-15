@@ -7,17 +7,17 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="h-max min-h-[400px] xl:min-h-[600px] xl:col-span-4 xl:border-2 border-white rounded-3xl items-center justify-between mt-4 xl:mt-24">
+    <div className="h-max min-h-[400px] xl:min-h-[600px] xl:col-span-4 xl:border-2 border-white rounded-3xl items-center justify-between mt-4 md:mt-8 xl:mt-24">
       <div className="mt-2 xl:mt-20 xl:mx-32 flex flex-col gap-8 xl:grid xl:grid-cols-2 items-center">
         <Image
           src="/me-square.jpg"
           alt="Siddhesh Lakhani"
           width={300}
           height={300}
-          className="rounded-2xl xl:w-[250px] xl:h-[250px]"
+          className="rounded-2xl xl:w-[250px] xl:h-[250px] md:w-[400px] md:h-[400px]"
         />
         <div className="xl:grid grid-rows-4 gap-3 text-md font-light flex flex-row items-start text-left">
-        <span className="xl:hidden inline-block">Socials: </span>
+        <span className="xl:hidden inline-block md:text-2xl">Socials: </span>
           <Link
             key="instagram"
             href="https://instagram.com/sidlakhani_"
@@ -58,8 +58,8 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="xl:m-8 my-8 xl:mx-28 text-lg xl:text-xl font-light xl:text-justify">
-        <p className="-mx-4 xl:mx-0">
+      <div className="xl:m-8 my-8 xl:mx-28 text-lg md:text-2xl xl:text-xl font-light xl:text-justify">
+        <p className="-mx-4 md:mx-0 xl:mx-0">
           I'm a Computer Engineering student with a passion for coding and a
           keen interest in new technologies. My journey into the world of web
           development is just beginning, and I'm excited to share it with you.
