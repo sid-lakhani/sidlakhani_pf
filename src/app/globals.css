@@ -4,7 +4,28 @@
 
 @layer base {
   body {
-    @apply font-primary bg-secondary text-white leading-loose ;
+    @apply font-primary bg-secondary text-white leading-loose;
+  }
+}
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: black; /* Background of the scrollbar track */
+    border-radius: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #00ff99; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+    border: 2px solid #1e1e1e; /* Padding around the scrollbar thumb */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #00e187; /* Color when hovered */
   }
 }
 

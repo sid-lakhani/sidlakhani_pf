@@ -12,7 +12,7 @@ export default function Work() {
   };
 
   return (
-    <div className="h-max min-h-[600px] md:col-span-4 flex-col items-center justify-between mt-24">
+    <div className="h-max min-h-[600px] md:col-span-4 flex-col items-center justify-between mt-16 z-0">
       <Tabs defaultValue="projects" className="w-full">
         <TabsList className="flex justify-center gap-2">
           <TabsTrigger value="projects" className="px-4 text-md rounded-lg">
@@ -22,10 +22,10 @@ export default function Work() {
             Experience
           </TabsTrigger>
         </TabsList>
-        <TabsContent value="projects">
+        <TabsContent value="projects" className="h-[500px] overflow-y-scroll mt-12 custom-scrollbar">
           <ProjectsCard />
         </TabsContent>
-        <TabsContent value="experience">
+        <TabsContent value="experience" className="h-[500px] overflow-y-scroll mt-12 custom-scrollbar">
           <ExperienceCard />
         </TabsContent>
       </Tabs>
