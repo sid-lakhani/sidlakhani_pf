@@ -2,15 +2,8 @@
 import ExperienceCard from "@/components/ExperienceCard";
 import ProjectsCard from "@/components/ProjectsCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useState } from "react";
 
 export default function Work() {
-  const [showProjects, setShowProjects] = useState(true);
-
-  const toggleProjects = () => {
-    setShowProjects((prev) => !prev);
-  };
-
   return (
     <div className="h-max min-h-[600px] md:col-span-4 flex-col items-center justify-between mt-16 z-0">
       <Tabs defaultValue="projects" className="w-full">

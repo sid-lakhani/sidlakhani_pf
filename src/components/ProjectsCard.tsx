@@ -79,7 +79,7 @@ const ProjectsCard = () => {
             <CardHeader className="flex flex-col items-center">
               <h1 className="text-xl text-primary font-extrabold underline">{project.title}</h1>
             </CardHeader>
-            <CardContent className="flex flex-row gap-8 items-center justify-center">
+            <CardContent className="flex flex-row gap-8 items-center justify-center mt-8">
               <Image
                 src={project.image}
                 alt={project.title}
