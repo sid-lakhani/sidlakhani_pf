@@ -1,4 +1,4 @@
-import { Card, CardHeader } from "@nextui-org/card";
+import { Card, CardHeader } from "@/components/ui/card";
 import React from "react";
 import { CardContent } from "./ui/card";
 import Image from "next/image";
@@ -74,12 +74,12 @@ const ProjectsCard = () => {
         return (
           <Card
             key={index}
-            className="border-2 border-primary bg-accent bg-opacity-80 rounded-xl p-4 pt-6 "
+            className="border-2 border-primary bg-accent rounded-xl p-4"
           >
             <CardHeader className="flex flex-col items-center">
               <h1 className="text-xl text-primary font-extrabold underline">{project.title}</h1>
             </CardHeader>
-            <CardContent className="flex flex-row gap-8 items-center justify-center mt-8">
+            <CardContent className="flex flex-row gap-8 items-center justify-center">
               <Image
                 src={project.image}
                 alt={project.title}
