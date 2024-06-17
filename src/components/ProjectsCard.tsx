@@ -69,7 +69,7 @@ const projects = [
 
 const ProjectsCard = () => {
   return (
-    <main className="flex flex-col gap-4 mx-12">
+    <main className="flex flex-col gap-6 mx-12">
       {projects.map((project, index) => {
         return (
           <Card
