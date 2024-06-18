@@ -1,61 +1,15 @@
 import { Card, CardHeader } from "@/components/ui/card";
-import { FaHtml5, FaPython, FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiNextdotjs, SiTypescript } from "react-icons/si";
-import { PiFileCppFill } from "react-icons/pi";
-
-
-
-
-const skills = [
-  {
-    name: "JavaScript",
-    logo: <IoLogoJavascript className="text-3xl text-accent" />,
-  },
-  {
-    name: "React",
-    logo: <FaReact className="text-3xl text-accent" />,
-  },
-  {
-    name: "Next.js",
-    logo: <SiNextdotjs className="text-3xl text-accent" />,
-  },
-  {
-    name: "Tailwind CSS",
-    logo: <RiTailwindCssFill className="text-3xl text-accent" />,
-  },
-  {
-    name: "HTML5",
-    logo: <FaHtml5 className="text-3xl text-accent" />,
-  },
-  {
-    name: "CSS3",
-    logo: <FaHtml5 className="text-3xl text-accent" />,
-  },
-  {
-    name: "Python",
-    logo: <FaPython className="text-3xl text-accent" />,
-  },
-  {
-    name: "C++",
-    logo: <PiFileCppFill className="text-3xl text-accent" />,
-  },
-  {
-    name: "TypeScript",
-    logo: <SiTypescript className="text-3xl text-accent" />,
-  },
-];
+import { techSkills } from "@/constants/skills";
 
 const SkillsCard = () => {
   return (
     <div className="xl:grid grid-cols-3 my-12 gap-x-8 gap-y-10">
-      {skills.map((skill, index) => {
+      {techSkills.map((techSkills, index) => {
         return (
           <Card key={index} className="border-2 border-white bg-primary bg-opacity-80 rounded-xl hover:scale-110 duration-300 transform-gpu">
             <CardHeader className="flex flex-row gap-3 items-center">
-              {skill.logo}
-              <p className="text-md text-accent">{skill.name}</p>
+              {techSkills.logo}
+              <p className="text-md text-accent">{techSkills.name}</p>
             </CardHeader>
           </Card>
         );
