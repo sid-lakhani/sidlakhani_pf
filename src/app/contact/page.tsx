@@ -7,12 +7,12 @@ import { IoIosMail } from "react-icons/io";
 
 export default function Contact() {
   return (
-    <main className="h-max min-h-[600px] xl:col-span-4 items-center justify-between mt-12">
-      <div className="flex flex-col items-center mt-12">
-        <h1 className="text-3xl xl:text-4xl bg-accent rounded-lg p-2 text-primary font-secondary">
+    <main className="h-max min-h-[600px] xl:col-span-4 items-center justify-between mt-4 xl:mt-12">
+      <div className="flex flex-col items-center xl:mt-12">
+        <h1 className="text-3xl xl:text-4xl xl:bg-accent rounded-lg p-2 text-accent xl:text-primary font-secondary pt-4">
           Connect With Me!
         </h1>
-        <div className="flex justify-evenly flex-col mt-4 bg-french-beige bg-opacity-40 rounded-lg h-36 w-2/3">
+        <div className="flex justify-evenly flex-col xl:mt-4 rounded-lg h-36 xl:w-2/3">
           <div className="flex flex-row gap-2">
             <FaLocationDot className="text-2xl text-white" />
             Mumbai, India
@@ -26,7 +26,7 @@ export default function Contact() {
               lakhani.siddhesh@gmail.com
             </Link>
           </div>
-          <div className="flex flex-row gap-2 text-xl">
+          <div className="flex flex-row gap-2 text-lg">
             Socials:
             <Link
               key="instagram"
@@ -51,14 +51,14 @@ export default function Contact() {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-evenly mt-4 w-2/3">
-          <h2 className="text-2xl text-accent font-secondary">
+        <div className="flex flex-col items-center justify-evenly mt-4 xl:w-2/3">
+          <h2 className="text-2xl xl:text-3xl text-accent font-secondary">
             Or drop me a message!
           </h2>
           <form
             action="mailto:lakhani.siddhesh@gmail.com"
             method="POST"
-            className="flex flex-col items-center mt-4 gap-1 h-auto w-full text-primary text-lg"
+            className="flex flex-col items-center mt-6 xl:mt-4 gap-1 h-auto w-full text-primary text-lg"
           >
             <input
               type="text"
@@ -84,15 +84,15 @@ export default function Contact() {
               Send
             </Button>
           </form>
-          <div className="flex flex-row items-center m-6 gap-4 text-accent bg-primary border-2 border-white p-2 rounded-lg">
+          <div className="flex flex-row items-center m-6 gap-2 xl:gap-4 text-accent bg-primary border-2 border-white p-2 rounded-lg font-secondary text-md xl:text-xl">
             Support Me:
-            <Link href="https://www.buymeacoffee.com/sidlakhani" className="">
+            <Link href="https://www.buymeacoffee.com/sidlakhani">
               <Image
                 src="/bmc_button.png"
                 alt="support me"
-                width={150}
-                height={200}
-                className=""
+                width={130}
+                height={100}
+                className="md:w-[150px]"
               />
             </Link>
           </div>

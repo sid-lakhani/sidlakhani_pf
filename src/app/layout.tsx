@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Zeyada } from "next/font/google";
+import { JetBrains_Mono, Kalam } from "next/font/google";
 import "./globals.css";
 
 //components
@@ -16,10 +16,10 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains",
 });
 
-const zeyada = Zeyada({
+const kalam = Kalam({
   subsets: ["latin"],
   weight: ["400"],
-  variable: "--font-architects",
+  variable: "--font-kalam",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jetbrainsMono.variable} ${zeyada.variable}`}>
+      <body className={`${jetbrainsMono.variable} ${kalam.variable}`}>
         <Header />
         <PageEffect />
         <PageTransition>

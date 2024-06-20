@@ -16,7 +16,7 @@ const config = {
     },
     fontFamily: {
       primary: "var(--font-jetbrains)",
-      secondary: "var(--font-zeyada)",
+      secondary: "var(--font-kalam)",
     },
     extend: {
       colors: {
