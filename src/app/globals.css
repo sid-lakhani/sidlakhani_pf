@@ -43,7 +43,7 @@
 }
 
 .custom-blur {
-  --blur: 5px;
+  --blur: 10px;
   -webkit-backdrop-filter: blur(var(--blur));
   backdrop-filter: blur(var(--blur));
 }
