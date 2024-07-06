@@ -21,20 +21,20 @@ export default function Skills() {
           {showTechnicalSkills ? (
             <motion.div
               key="technical"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }}
-              transition={{ duration: 0.5 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.4 }}
             >
               <TechnicalSkills />
             </motion.div>
           ) : (
             <motion.div
               key="soft"
-              initial={{ opacity: 0, y: -20 }}
+              initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.4 }}
             >
               <SoftSkills />
             </motion.div>
@@ -45,7 +45,7 @@ export default function Skills() {
             transition={{ duration: 0.2 }}
           >
             <Button
-              className="p-4 mb-12 xl:mt-4 text-2xl rounded-3xl border-2 border-white"
+              className="p-4 mb-12 xl:mt-4 mt-4 text-2xl rounded-3xl border-2 border-white"
               onClick={toggleSkills}
             >
               {showTechnicalSkills ? <FaArrowDown /> : <FaArrowUp />}

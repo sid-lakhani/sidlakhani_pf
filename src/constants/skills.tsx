@@ -53,20 +53,28 @@ export const softSkills = [
 
 export const techSkills = [
   {
-    name: "JavaScript",
-    logo: <IoLogoJavascript className="text-3xl text-accent" />,
+    name: "Next.js",
+    logo: <SiNextdotjs className="text-3xl text-accent" />,
   },
   {
     name: "React",
     logo: <FaReact className="text-3xl text-accent" />,
   },
   {
-    name: "Next.js",
-    logo: <SiNextdotjs className="text-3xl text-accent" />,
-  },
-  {
     name: "Tailwind CSS",
     logo: <RiTailwindCssFill className="text-3xl text-accent" />,
+  },
+  {
+    name: "JavaScript",
+    logo: <IoLogoJavascript className="text-3xl text-accent" />,
+  },
+  {
+    name: "TypeScript",
+    logo: <SiTypescript className="text-3xl text-accent" />,
+  },
+  {
+    name: "Python",
+    logo: <FaPython className="text-3xl text-accent" />,
   },
   {
     name: "HTML5",
@@ -77,15 +85,7 @@ export const techSkills = [
     logo: <FaCss3Alt className="text-3xl text-accent" />,
   },
   {
-    name: "Python",
-    logo: <FaPython className="text-3xl text-accent" />,
-  },
-  {
     name: "C++",
     logo: <PiFileCppFill className="text-3xl text-accent" />,
-  },
-  {
-    name: "TypeScript",
-    logo: <SiTypescript className="text-3xl text-accent" />,
   },
 ];

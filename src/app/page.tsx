@@ -14,7 +14,7 @@ export default function Home() {
           alt="Siddhesh Lakhani"
           width={300}
           height={300}
-          className="rounded-2xl xl:w-[250px] xl:h-[250px] md:w-[400px] md:h-[400px]"
+          className="rounded-2xl xl:w-[250px] md:w-[400px]"
         />
         <div className="xl:grid grid-rows-4 gap-3 text-md font-light flex flex-row items-start text-left">
         <span className="xl:hidden inline-block md:text-2xl">Socials: </span>

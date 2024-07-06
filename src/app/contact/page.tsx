@@ -1,90 +1,47 @@
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
-import { IoIosMail } from "react-icons/io";
+import { CiMail } from "react-icons/ci";
 
 export default function Contact() {
   return (
-    <main className="h-max xl:col-span-4 items-center justify-between mt-4 xl:mt-12">
-      <div className="flex flex-col items-center xl:mt-12">
-        <h1 className="text-3xl xl:text-4xl xl:bg-accent rounded-lg p-2 text-accent xl:text-primary font-secondary pt-4">
-          Connect With Me!
-        </h1>
-        <div className="flex justify-evenly flex-col xl:mt-4 rounded-lg h-36 xl:w-2/3">
-          <div className="flex flex-row gap-2">
-            <FaLocationDot className="text-2xl text-white" />
-            Mumbai, India
-          </div>
-          <div className="flex flex-row gap-2">
-            <IoIosMail className="text-3xl text-white" />
-            <Link
-              href="mailto:lakhani.siddhesh@gmail.com"
-              className="underline"
-            >
-              lakhani.siddhesh@gmail.com
-            </Link>
-          </div>
-          <div className="flex flex-row gap-2 text-lg">
-            Socials:
-            <Link
-              key="instagram"
-              href="https://instagram.com/sidlakhani_"
-              className=""
-            >
-              <FaInstagram className="text-2xl inline-block hover:rotate-6 hover:text-accent duration-300 transform transition-all" />
-            </Link>
-            <Link
-              key="github"
-              href="https://github.com/sid-lakhani"
-              className=""
-            >
-              <FaGithub className="text-2xl inline-block hover:rotate-6 hover:text-accent duration-300 transform transition-all" />
-            </Link>
-            <Link
-              key="linkedin"
-              href="https://linkedin.com/in/siddhesh-lakhani"
-              className=""
-            >
-              <FaLinkedin className="text-2xl inline-block hover:rotate-6 hover:text-accent duration-300 transform transition-all" />
-            </Link>
-          </div>
-        </div>
-        <div className="flex flex-col items-center justify-evenly mt-4 xl:w-2/3">
-          <h2 className="text-2xl xl:text-3xl text-accent font-secondary">
-            Or drop me a message!
+    <main className="h-max w-[80vw] md:w-full xl:col-span-4 items-center justify-between mt-8 xl:mt-32">
+      <div className="flex flex-col items-center bg-primary border-2 border-accent rounded-3xl p-4 md:p-16">
+        <div className="flex flex-col items-center justify-evenly mt-4 xl:w-full">
+          <h2 className="text-3xl xl:text-5xl text-accent font-secondary">
+            Let's Connect!
           </h2>
           <form
             action="mailto:lakhani.siddhesh@gmail.com"
             method="POST"
-            className="flex flex-col items-center mt-6 xl:mt-4 gap-1 h-auto w-full text-primary text-lg"
+            className="flex flex-col items-center mt-6 xl:mt-10 gap-2 w-full text-primary text-lg"
           >
-            <input
+            <Input
               type="text"
               name="name"
               placeholder="Name"
-              className="w-full h-1/5 transition-colors duration-500 bg-white focus:bg-accent rounded-lg p-2 placeholder:text-primary"
+              className="w-full h-10 transition-colors duration-500 bg-white focus:bg-accent rounded-lg p-2 placeholder:text-primary"
             />
-            <input
+            <Input
               type="email"
               name="_replyto"
               placeholder="Email"
-              className="w-full h-1/5 transition-colors duration-500 bg-white focus:bg-accent rounded-lg p-2 placeholder:text-primary"
+              className="w-full h-10 transition-colors duration-500 bg-white focus:bg-accent rounded-lg p-2 placeholder:text-primary"
             />
-            <textarea
+            <Input
               name="message"
               placeholder="Message"
-              className="w-full h-1/5 transition-colors duration-500 bg-white focus:bg-accent rounded-lg p-2 placeholder:text-primary"
+              className="w-full h-10 transition-colors duration-500 bg-white focus:bg-accent rounded-lg p-2 placeholder:text-primary"
             />
             <Button
               type="submit"
-              className="w-full h-1/5 transition-all duration-300 bg-accent bg-opacity-100 hover:bg-opacity-80 hover:bg-accent rounded-lg text-primary font-medium text-xl"
+              className="w-full h-12 transition-all duration-300 bg-accent bg-opacity-100 hover:bg-opacity-80 hover:bg-accent rounded-lg text-primary font-medium text-xl"
             >
               Send
             </Button>
           </form>
-          <div className="flex flex-row items-center m-6 gap-2 xl:gap-4 text-accent bg-primary border-2 border-white p-2 rounded-lg font-secondary text-md xl:text-xl">
+          <div className="flex flex-row items-center m-6 mb-0 gap-2 xl:gap-4 text-accent bg-primary p-2 rounded-lg font-secondary text-md xl:text-xl">
             Support Me:
             <Link href="https://www.buymeacoffee.com/sidlakhani">
               <Image
@@ -98,6 +55,12 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Link href={"mailto:lakhani.siddhesh@gmail.com"}>
+        <div className="mt-4 mb-8 xl:mt-8 xl:mb-0 flex flex-row gap-2 justify-center">
+          <CiMail className="text-3xl" />
+          <p className="text-lg font-light border-b-[1px] border-white">lakhani.siddhesh@gmail.com</p>
+        </div>
+      </Link>
     </main>
   );
 }
