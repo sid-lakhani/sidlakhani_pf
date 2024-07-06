@@ -20,7 +20,7 @@ const MobileNav = () => {
         </div>
 
         {/* nav */}
-        <nav className="flex flex-col gap-8 md:gap-12 mt-10 md:mt-14">
+        <nav className="flex flex-col items-start gap-8 md:gap-12 mt-10 md:mt-14">
           {navLinks.map((navLinks, index) => {
             return (
               <Link
@@ -28,7 +28,7 @@ const MobileNav = () => {
                 key={index}
                 className={`${
                   navLinks.path === pathname &&
-                  "text-accent underline"
+                  "text-accent border-b-2 border-accent"
                 } capitalize hover:text-accent font-medium text-xl transition-all`}
               >
                 {navLinks.name}
