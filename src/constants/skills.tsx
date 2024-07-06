@@ -6,7 +6,7 @@ import { PiBagSimpleFill, PiLightbulbDuotone } from "react-icons/pi";
 import { TfiReload } from "react-icons/tfi";
 
 //tech skills
-import { FaHtml5, FaPython, FaReact } from "react-icons/fa";
+import { FaHtml5, FaPython, FaReact,  FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs, SiTypescript } from "react-icons/si";
@@ -74,7 +74,7 @@ export const techSkills = [
   },
   {
     name: "CSS3",
-    logo: <FaHtml5 className="text-3xl text-accent" />,
+    logo: <FaCss3Alt className="text-3xl text-accent" />,
   },
   {
     name: "Python",
