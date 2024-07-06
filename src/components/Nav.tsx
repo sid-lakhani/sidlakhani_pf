@@ -13,7 +13,7 @@ const Nav = () => {
         return (
           <Link href={navLinks.path} key={index} className={`capitalize hover:text-accent font-medium space-x-3 text-xl transition-all`}>
             <span className="mr-2">-</span>
-            <span className={`${isActive && "text-accent underline"}`}>{navLinks.name}</span>
+            <span className={`${isActive && "text-accent border-b-2 border-accent"}`}>{navLinks.name}</span>
           </Link>
         );
       })}
