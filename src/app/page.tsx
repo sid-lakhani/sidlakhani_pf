@@ -7,7 +7,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="h-max min-h-[400px] xl:min-h-[600px] xl:col-span-4 xl:border-2 border-white rounded-3xl items-center justify-between mt-4 md:mt-8 xl:mt-24">
+    <div className="h-max xl:min-h-[75vh] xl:col-span-4 xl:border-2 border-white rounded-3xl items-center justify-between mt-4 md:mt-8 xl:mt-24">
       <div className="mt-2 xl:mt-20 xl:mx-32 flex flex-col gap-8 xl:grid xl:grid-cols-2 items-center">
         <Image
           src="/me-square.jpg"

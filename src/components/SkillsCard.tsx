@@ -12,7 +12,7 @@ interface SkillsCardProps {
 
 const SkillsCard: FC<SkillsCardProps> = ({ skills }) => {
   return (
-    <div className="grid xl:grid-cols-3 grid-rows my-8 xl:my-12 gap-y-4 xl:gap-x-8 xl:gap-y-10">
+    <div className="grid grid-cols-3 my-8 xl:my-12 gap-4 xl:gap-x-8 xl:gap-y-10">
       {skills.map((skill, index) => (
         <Card
           key={index}
@@ -20,7 +20,7 @@ const SkillsCard: FC<SkillsCardProps> = ({ skills }) => {
         >
           <CardHeader className="flex flex-row gap-3 items-center">
             {skill.logo}
-            <p className="text-md text-accent">{skill.name}</p>
+            <p className="text-md text-accent xl:inline-block hidden hover:inline-block">{skill.name}</p>
           </CardHeader>
         </Card>
       ))}

@@ -15,7 +15,7 @@ export default function Skills() {
   };
 
   return (
-    <main className="h-max min-h-[600px] md:col-span-4 items-center justify-between mt-10 xl:mt-16">
+    <main className="h-max md:col-span-4 items-center justify-between mt-10 xl:mt-20">
       <div className="flex flex-col items-center">
         <AnimatePresence mode="wait">
           {showTechnicalSkills ? (
@@ -42,10 +42,10 @@ export default function Skills() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.2 }}
           >
             <Button
-              className="p-4 mt-0 xl:mt-4 mb-12 xl:mb-[-20px] text-2xl rounded-3xl border-2 border-white"
+              className="p-4 mb-12 xl:mt-4 text-2xl rounded-3xl border-2 border-white"
               onClick={toggleSkills}
             >
               {showTechnicalSkills ? <FaArrowDown /> : <FaArrowUp />}

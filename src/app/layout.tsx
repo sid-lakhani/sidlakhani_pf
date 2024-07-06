@@ -9,6 +9,7 @@ import AnimationText from "@/components/animations/AnimationText";
 import Header from "@/components/Header";
 import PageEffect from "@/components/animations/PageEffect";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -46,10 +47,12 @@ export default function RootLayout({
                   <AnimationText text="A Full-Stack Engineer." />
                 </div>
                 <div className="flex flex-row gap-8 mt-8 md:mt-10 xl:mt-12 xl:ml-8 font-medium justify-center xl:justify-normal">
-                  <Button className="w-36 text-xl bg-accent text-black hover:opacity-80 hover:bg-accent duration-300 transition-all">
-                    Hire Me
-                  </Button>
-                  <Button className="w-36 text-xl bg-inherit text-accent border-4 border-accent hover:opacity-90 hover:bg-accent hover:text-black duration-200 transition-a">
+                  <Link href={"./contact"}>
+                    <Button className="w-36 text-xl bg-accent text-black hover:bg-accent-hover duration-300 transition-all rounded-3xl">
+                      Hire Me
+                    </Button>
+                  </Link>
+                  <Button className="w-36 text-xl bg-inherit text-accent border-2 md:border-4 border-accent hover:bg-accent-hover hover:text-black duration-300 transition-all rounded-3xl">
                     Resume
                   </Button>
                 </div>

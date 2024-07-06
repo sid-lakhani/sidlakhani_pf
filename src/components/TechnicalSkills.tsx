@@ -4,7 +4,7 @@ import SkillsCard from "./SkillsCard";
 const TechnicalSkills = () => {
   return (
     <div>
-      <div className="flex flex-col items-center mt-[-20px] xl:mt-12 text-2xl md:text-3xl text-white">
+      <div className="flex flex-col items-center mt-[-20px] xl:mt-12 text-3xl md:text-5xl text-white font-secondary">
         Technical Skills
       </div>
       <SkillsCard skills={techSkills} />
