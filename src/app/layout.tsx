@@ -52,9 +52,11 @@ export default function RootLayout({
                       Hire Me
                     </Button>
                   </Link>
-                  <Button className="w-36 text-xl bg-inherit text-accent border-2 md:border-4 border-accent hover:bg-accent-hover hover:text-black duration-300 transition-all rounded-3xl">
-                    Resume
-                  </Button>
+                  <Link href="/resume.pdf">
+                    <Button className="w-36 text-xl bg-inherit text-accent border-2 md:border-4 border-accent hover:bg-accent-hover hover:text-black duration-300 transition-all rounded-3xl">
+                      Resume
+                    </Button>
+                  </Link>
                 </div>
                 <Nav />
               </div>
