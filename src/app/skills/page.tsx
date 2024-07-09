@@ -47,7 +47,7 @@ export default function Skills() {
             transition={{ duration: 0.2 }}
           >
             <Button
-              className="p-4 mb-12 xl:mt-4 mt-4 text-2xl rounded-3xl border-2 border-white"
+              className="p-4 mb-12 xl:mb-0 text-2xl rounded-3xl border-2 border-white"
               onClick={toggleSkills}
             >
               {showTechnicalSkills ? <FaArrowDown /> : <FaArrowUp />}
