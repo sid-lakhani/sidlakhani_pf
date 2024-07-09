@@ -1,11 +1,13 @@
 "use client";
 
+import { useScrollToTop } from "@/hooks/useScrollToTop";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 //components
 
 export default function Home() {
+  useScrollToTop();
   return (
     <div className="h-max xl:min-h-[75vh] xl:col-span-4 xl:border-2 border-white rounded-3xl items-center justify-between mt-4 md:mt-8 xl:mt-24">
       <div className="mt-2 xl:mt-20 xl:mx-32 flex flex-col gap-8 xl:grid xl:grid-cols-2 items-center">

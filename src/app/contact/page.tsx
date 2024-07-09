@@ -1,10 +1,14 @@
+'use client';
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useScrollToTop } from "@/hooks/useScrollToTop";
 import Image from "next/image";
 import Link from "next/link";
 import { CiMail } from "react-icons/ci";
 
 export default function Contact() {
+  useScrollToTop();
   return (
     <main className="h-max w-[80vw] md:w-full xl:col-span-4 items-center justify-between mt-8 xl:mt-24">
       <div className="flex flex-col items-center bg-primary border-2 border-accent rounded-3xl p-4 md:p-16 md:pb-12">

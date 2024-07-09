@@ -6,6 +6,7 @@ import { Button } from "@nextui-org/react";
 import { useState } from "react";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa6";
 import { AnimatePresence, motion } from "framer-motion";
+import { useScrollToTop } from "@/hooks/useScrollToTop";
 
 export default function Skills() {
   const [showTechnicalSkills, setShowTechnicalSkills] = useState(true);
@@ -14,6 +15,7 @@ export default function Skills() {
     setShowTechnicalSkills((prev) => !prev);
   };
 
+  useScrollToTop();
   return (
     <main className="h-max md:col-span-4 items-center justify-between mt-10 xl:mt-20">
       <div className="flex flex-col items-center">
