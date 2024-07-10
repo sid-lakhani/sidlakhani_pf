@@ -59,10 +59,10 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Link href={"mailto:lakhani.siddhesh@gmail.com"}>
+      <Link href={"mailto:contact@sidlakhani.tech"}>
         <div className="mt-4 mb-8 xl:mt-8 xl:mb-0 flex flex-row gap-2 justify-center">
           <CiMail className="text-3xl" />
-          <p className="text-lg font-light border-b-[1px] border-white">lakhani.siddhesh@gmail.com</p>
+          <p className="text-lg font-light border-b-[1px] border-white">contact@sidlakhani.tech</p>
         </div>
       </Link>
     </main>

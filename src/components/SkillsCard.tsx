@@ -40,7 +40,7 @@ const SkillsCard: FC<SkillsCardProps> = ({ skills }) => {
             key={index}
             onClick={() => handleCardClick(skill.name)}
             className={`border-2 border-white bg-primary rounded-xl xl:hover:scale-110 duration-300 transform-gpu cursor-pointer ${
-              selectedSkillName === skill.name ? "scale-110 xl:scale-100" : ""
+              selectedSkillName === skill.name ? "scale-110 xl:scale-100 xl:border-white border-accent" : ""
             }`}
           >
             <CardHeader className="flex flex-row gap-3 items-center">
