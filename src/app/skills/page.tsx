@@ -1,59 +1,32 @@
 "use client";
 
-import SoftSkills from "@/components/SoftSkills";
-import TechnicalSkills from "@/components/TechnicalSkills";
-import { Button } from "@nextui-org/react";
-import { useState } from "react";
-import { FaArrowDown, FaArrowUp } from "react-icons/fa6";
-import { AnimatePresence, motion } from "framer-motion";
 import { useScrollToTop } from "@/hooks/useScrollToTop";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import FrontendSkills from "@/components/FrontendSkills";
+import BackendSkills from "@/components/BackendSkills";
+import MiscSkills from "@/components/MiscSkills";
 
 export default function Skills() {
-  const [showTechnicalSkills, setShowTechnicalSkills] = useState(true);
-
-  const toggleSkills = () => {
-    setShowTechnicalSkills((prev) => !prev);
-  };
-
   useScrollToTop();
   return (
     <main className="h-max md:col-span-4 items-center justify-between mt-10 xl:mt-20">
       <div className="flex flex-col items-center">
-        <AnimatePresence mode="wait">
-          {showTechnicalSkills ? (
-            <motion.div
-              key="technical"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 10 }}
-              transition={{ duration: 0.4 }}
-            >
-              <TechnicalSkills />
-            </motion.div>
-          ) : (
-            <motion.div
-              key="soft"
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.4 }}
-            >
-              <SoftSkills />
-            </motion.div>
-          )}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.2 }}
-          >
-            <Button
-              className="p-4 mb-12 xl:mb-0 text-2xl rounded-3xl border-2 border-white"
-              onClick={toggleSkills}
-            >
-              {showTechnicalSkills ? <FaArrowDown /> : <FaArrowUp />}
-            </Button>
-          </motion.div>
-        </AnimatePresence>
+        <Tabs defaultValue="frontend" className="w-full xl:z-50">
+          <TabsList className="flex align-center justify-center gap-4">
+            <TabsTrigger value="frontend">Frontend</TabsTrigger>
+            <TabsTrigger value="backend">Backend</TabsTrigger>
+            <TabsTrigger value="misc">Miscellaneous</TabsTrigger>
+          </TabsList>
+          <TabsContent value="frontend">
+            <FrontendSkills />
+          </TabsContent>
+          <TabsContent value="backend">
+            <BackendSkills />
+          </TabsContent>
+          <TabsContent value="misc">
+            <MiscSkills />
+          </TabsContent>
+        </Tabs>
       </div>
     </main>
   );
