@@ -1,10 +1,11 @@
 export const projects = [
     {
-        title: "Project 1",
-        description: "Description of project 1",
-        image: "/dummy.png",
-        link: "/",
-        github: "https://github.com/sid-lakhani",
+        title: "TaskCanvas",
+        description: "A basic To-Do website that allows user to add, delete and mark tasks as completed.",
+        image: "/TaskCanvas.jpg",
+        link: "https://taskcanvas.sidlakhani.tech",
+        github: "https://github.com/sid-lakhani/TaskCanvas-Hackathon",
+        category: ["Next.js" ,"React", "Firebase"],
       },
       {
         title: "Project 2",
@@ -12,6 +13,7 @@ export const projects = [
         image: "/dummy.png",
         link: "/",
         github: "https://github.com/sid-lakhani",
+        category: [],
       },
       {
         title: "Project 3",
@@ -19,6 +21,7 @@ export const projects = [
         image: "/dummy.png",
         link: "/",
         github: "https://github.com/sid-lakhani",
+        category: [],
       },
       {
         title: "Project 4",
@@ -26,6 +29,7 @@ export const projects = [
         image: "/dummy.png",
         link: "/",
         github: "https://github.com/sid-lakhani",
+        category: [],
       },
       {
         title: "Project 5",
@@ -33,6 +37,7 @@ export const projects = [
         image: "/dummy.png",
         link: "/",
         github: "https://github.com/sid-lakhani",
+        category: [],
       },
       {
         title: "Project 6",
@@ -40,6 +45,7 @@ export const projects = [
         image: "/dummy.png",
         link: "/",
         github: "https://github.com/sid-lakhani",
+        category: [],
       },
       {
         title: "Project 7",
@@ -47,6 +53,7 @@ export const projects = [
         image: "/dummy.png",
         link: "/",
         github: "https://github.com/sid-lakhani",
+        category: [],
       },
       {
         title: "Project 8",
@@ -54,6 +61,7 @@ export const projects = [
         image: "/dummy.png",
         link: "/",
         github: "https://github.com/sid-lakhani",
+        category: [],
       },
       {
         title: "Project 9",
@@ -61,6 +69,7 @@ export const projects = [
         image: "/dummy.png",
         link: "/",
         github: "https://github.com/sid-lakhani",
+        category: [],
       },
       {
         title: "Project 10",
@@ -68,5 +77,6 @@ export const projects = [
         image: "/dummy.png",
         link: "/",
         github: "https://github.com/sid-lakhani",
+        category: [],
       },
 ];

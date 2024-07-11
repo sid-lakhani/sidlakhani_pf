@@ -1,6 +1,5 @@
-import { Card, CardHeader } from "@/components/ui/card";
-import React from "react";
-import { CardContent } from "./ui/card";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/constants/projects";
@@ -14,10 +13,17 @@ import {
 } from "@/components/ui/carousel";
 
 const ProjectsCard = () => {
+  const [expanded, setExpanded] = useState<{ [key: number]: boolean }>({});
+
+  const handleToggle = (index: number) => {
+    setExpanded((prev) => ({ ...prev, [index]: !prev[index] }));
+  };
+
   return (
     <main>
       <div className="hidden xl:flex flex-col gap-6 mx-12">
         {projects.map((project, index) => {
+          const isExpanded = expanded[index];
           return (
             <Card
               key={index}
@@ -32,13 +38,28 @@ const ProjectsCard = () => {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  width={100}
-                  height={100}
-                  className="w-1/4"
+                  width={200}
+                  height={200}
+                  className="w-1/4 border-2 border-primary rounded-xl"
                 />
-                <p className="text-md text-primary w-2/4">
-                  {project.description}
-                </p>
+                <div className="flex flex-col w-2/4 gap-4">
+                  <p
+                    className={`text-md text-primary ${isExpanded ? '' : 'truncate-description'}`}
+                    onClick={() => handleToggle(index)}
+                  >
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.category.map((category, catIndex) => (
+                      <span
+                        key={catIndex}
+                        className="bg-primary text-white text-xs font-semibold px-2 py-1 rounded"
+                      >
+                        {category}
+                      </span>
+                    ))}
+                  </div>
+                </div>
                 <div className="flex flex-col w-1/4 gap-4 items-center justify-normal text-xl">
                   <Link href={project.link} className="text-primary">
                     <FaExternalLinkAlt />
@@ -56,6 +77,7 @@ const ProjectsCard = () => {
         <Carousel className="w-full max-w-xs">
           <CarouselContent>
             {projects.map((project, index) => {
+              const isExpanded = expanded[index];
               return (
                 <CarouselItem key={index}>
                   <div className="p-2">
@@ -72,13 +94,27 @@ const ProjectsCard = () => {
                         <Image
                           src={project.image}
                           alt={project.title}
-                          width={100}
-                          height={100}
+                          width={150}
+                          height={150}
+                          className="border-2 border-primary rounded-xl"
                         />
-                        <p className="text-md text-primary">
+                        <p
+                          className={`text-md text-primary ${isExpanded ? '' : 'truncate-description'}`}
+                          onClick={() => handleToggle(index)}
+                        >
                           {project.description}
                         </p>
-                        <div className="flex flex-row gap-4 items-center justify-center text-xl">
+                        <div className="flex flex-wrap gap-2">
+                          {project.category.map((category, catIndex) => (
+                            <span
+                              key={catIndex}
+                              className="bg-primary text-white text-xs font-semibold px-2 py-1 rounded"
+                            >
+                              {category}
+                            </span>
+                          ))}
+                        </div>
+                        <div className="flex flex-row gap-6 items-center justify-center text-xl">
                           <Link href={project.link} className="text-primary">
                             <FaExternalLinkAlt />
                           </Link>
