@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Kalam } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
 //components
 import Nav from "@/components/Nav";
@@ -34,6 +35,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>sidlakhani</title>
+        <meta name="description" content="Portfolio Website" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/public/me.jpg" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta property="og:title" content="sidlakhani" />
+        <meta property="og:description" content="Portfolio Website" />
+        <meta property="og:image" content="https://sidlakhani.tech/_next/image?url=%2Fme.jpg&w=384&q=75" />
+        <meta property="og:url" content="https://sidlakhani.tech" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
       <body className={`${jetbrainsMono.variable} ${kalam.variable}`}>
         <Header />
         <PageEffect />
