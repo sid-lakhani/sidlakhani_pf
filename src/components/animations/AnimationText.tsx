@@ -6,7 +6,7 @@ import React from "react";
 const AnimationText = ({ text }: { text: string }) => {
   const words = text.split(" ");
   const accentWords = ["Siddhesh", "Lakhani!"];
-  const underlineWords = ["Full-Stack", "Engineer."];
+  const underlineWords = ["Full-Stack", "Engineer"];
 
   // Variants for Container of words.
   const container = {
@@ -55,7 +55,7 @@ const AnimationText = ({ text }: { text: string }) => {
         <motion.span
           key={i}
           variants={child}
-          style={{ marginRight: "5px" }}
+          style={{ marginRight: "-5px" }}
           className="underline"
         >
           {underlinePhrase}

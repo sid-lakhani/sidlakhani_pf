@@ -44,7 +44,7 @@ export default function RootLayout({
                 <div className="xl:mt-8 font-semibold">
                   <AnimationText text="Hi," />
                   <AnimationText text="I am Siddhesh Lakhani!" />
-                  <AnimationText text="A Full-Stack Engineer." />
+                  <AnimationText text="A Full-Stack Engineer ." />
                 </div>
                 <div className="flex flex-row gap-8 mt-8 md:mt-10 xl:mt-12 xl:ml-8 font-medium justify-center xl:justify-normal">
                   <Link href={"./contact"}>
