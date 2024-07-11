@@ -38,7 +38,7 @@ export default function RootLayout({
       <Head>
         <title>sidlakhani</title>
         <meta name="description" content="Portfolio Website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/public/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/public/me.jpg" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta property="og:title" content="sidlakhani" />
