@@ -9,8 +9,8 @@ import MiscSkills from "@/components/MiscSkills";
 export default function Skills() {
   useScrollToTop();
   return (
-    <main className="h-max md:col-span-4 items-center justify-between mt-10 xl:mt-20">
-      <div className="flex flex-col items-center">
+    <main className="h-max md:col-span-4 items-center justify-between mt-2 xl:mt-24">
+      <div className="xl:flex flex-col items-center hidden">
         <Tabs defaultValue="frontend" className="w-full xl:z-50">
           <TabsList className="flex align-center justify-center gap-4">
             <TabsTrigger value="frontend">Frontend</TabsTrigger>
@@ -27,6 +27,11 @@ export default function Skills() {
             <MiscSkills />
           </TabsContent>
         </Tabs>
+      </div>
+      <div className="xl:hidden flex flex-col mb-8">
+        <FrontendSkills />
+        <BackendSkills />
+        <MiscSkills />
       </div>
     </main>
   );

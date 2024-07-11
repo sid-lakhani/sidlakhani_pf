@@ -1,7 +1,7 @@
 import { FaHtml5, FaPython, FaReact, FaCss3Alt, FaGithub } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
+import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiNextdotjs, SiTypescript } from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiCanva } from "react-icons/si";
 import { PiFileCppFill } from "react-icons/pi";
 
 export const skills = [
@@ -51,8 +51,18 @@ export const skills = [
     category: "backend",
   },
   {
+    name: "Firebase",
+    logo: <IoLogoFirebase className="text-3xl text-accent" />,
+    category: "backend",
+  },
+  {
     name: "GitHub",
     logo: <FaGithub className="text-3xl text-accent" />,
+    category: "misc",
+  },
+  {
+    name: "Canva",
+    logo: <SiCanva className="text-3xl text-accent" />,
     category: "misc",
   },
 ];
