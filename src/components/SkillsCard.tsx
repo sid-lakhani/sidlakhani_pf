@@ -26,7 +26,7 @@ const SkillsCard: FC<SkillsCardProps> = ({ skills }) => {
   };
 
   return (
-    <div>
+    <div className="xl:px-4 md:px-10 px-1">
       <div className="xl:hidden col-span-3 text-center">
         {selectedSkillName && (
           <div className="inline-block text-accent font-semibold text-xl border-b-[1px] border-accent mb-4">
