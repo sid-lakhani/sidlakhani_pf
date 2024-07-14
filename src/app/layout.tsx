@@ -4,12 +4,9 @@ import "./globals.css";
 
 //components
 import Header from "@/components/Header";
-import Nav from "@/components/Nav";
-import AnimationText from "@/components/animations/AnimationText";
+import LayoutElements from "@/components/LayoutElements";
 import PageEffect from "@/components/animations/PageEffect";
 import PageTransition from "@/components/animations/PageTransition";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -24,27 +21,47 @@ const kalam = Kalam({
 });
 
 export const metadata: Metadata = {
-  title: "sidlakhani",
-  description: "Portfolio Website",
+  title: "Portfolio | Siddhesh Lakhani",
+  description:
+    "Computer Engineer with significant interest in Website Development",
+  authors: {
+    name: "Siddhesh Lakhani",
+    url: "https://sidlakhani.tech/",
+  },
+  creator: "Siddhesh Lakhani",
+  publisher: "Siddhesh Lakhani",
+  keywords: [
+    "Portfolio",
+    "Siddhesh Lakhani",
+    "Full-Stack Engineer",
+    "Web Developer",
+  ],
   openGraph: {
-    title: "sidlakhani",
-    description: "Portfolio Website",
+    type: "website",
+    url: "https://sidlakhani.tech/",
+    title: "Portfolio | Siddhesh Lakhani",
+    description: "Computer Engineer with significant interest in Website Development",
+    siteName: "Siddhesh Lakhani Portfolio",
     images: [
       {
         url: "/me.jpg",
-        width: 384,
-        height: 384,
-        alt: "sidlakhani",
+        alt: "Hey there, I am Siddhesh Lakhani",
       },
     ],
-    url: new URL("https://sidlakhani.tech"),
+  },
+  twitter: {
+    creator: "@sidlakhani_",
+    creatorId: "x.com/sidlakhani_",
+    site: "https://sidlakhani.tech/",
+    title: "Portfolio | Siddhesh Lakhani",
+    images: [
+      {
+        url: "/me.jpg",
+        alt: "Hey there, I am Siddhesh Lakhani",
+      },
+    ],
   },
   metadataBase: new URL("https://sidlakhani.tech"),
-  icons: "/me.jpg",
-  manifest: "/site.webmanifest",
-  twitter: {
-    card: "summary_large_image",
-  },
 };
 
 export default function RootLayout({
@@ -54,31 +71,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jetbrainsMono.className}`}>
+      <body className={`${jetbrainsMono.className} min-h-[100vh] -mt-8`}>
         <Header />
         <PageEffect />
         <PageTransition>
           <main className="min-h-[90dvh] xl:grid grid-cols-7 text-center xl:text-left gap-4 mx-16 md:mx-32 mt-8 content-center my-auto">
-            <div className="xl:col-span-3 h-max xl:pl-8 mt-24 md:mt-32 xl:mt-40">
-              <div className="xl:mt-8 font-semibold">
-                <AnimationText text="Hi," />
-                <AnimationText text="I am Siddhesh Lakhani!" />
-                <AnimationText text="A Full-Stack Engineer" />
-              </div>
-              <div className="flex flex-row gap-8 mt-8 md:mt-10 xl:mt-12 xl:ml-8 font-medium justify-center xl:justify-normal">
-                <Link href={"./contact"}>
-                  <Button className="w-36 text-xl bg-accent text-black hover:bg-accent-hover duration-300 transition-all rounded-3xl">
-                    Hire Me
-                  </Button>
-                </Link>
-                <Link href="/resume.pdf">
-                  <Button className="w-36 text-xl bg-inherit text-accent border-2 md:border-4 border-accent hover:bg-accent-hover hover:text-black duration-300 transition-all rounded-3xl">
-                    Resume
-                  </Button>
-                </Link>
-              </div>
-              <Nav />
-            </div>
+            <LayoutElements />
             {children}
           </main>
         </PageTransition>
