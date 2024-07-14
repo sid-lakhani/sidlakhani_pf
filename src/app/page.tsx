@@ -61,7 +61,7 @@ export default function Home() {
         </div>
       </div>
       <div className="xl:m-8 my-8 xl:mx-28 text-lg md:text-2xl xl:text-xl font-light xl:text-justify">
-        <p className="-mx-4 md:mx-0 xl:mx-0">
+        <p className="-mx-4 md:mx-0 xl:mx-0 text-balance">
           I'm a Computer Engineering student with a passion for coding and a
           keen interest in new technologies. My journey into the world of web
           development is just beginning, and I'm excited to share it with you.

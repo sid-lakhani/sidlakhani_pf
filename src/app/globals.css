@@ -69,3 +69,7 @@
     line-clamp: 4;
   }
 }
+
+html {
+  @apply h-full
+}
