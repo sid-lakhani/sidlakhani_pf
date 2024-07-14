@@ -23,6 +23,10 @@ export const metadata: Metadata = {
   title: "Portfolio | Siddhesh Lakhani",
   description:
     "Computer Engineer with significant interest in Website Development",
+    icons: {
+      icon: "/me.jpg",
+      apple: "/me.jpg",
+    },
   authors: {
     name: "Siddhesh Lakhani",
     url: "https://sidlakhani.tech/",
