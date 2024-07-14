@@ -5,17 +5,15 @@ import type { ReactNode } from "react";
 const PageTransition = ({ children }: { children: ReactNode }) => {
   return (
     <AnimatePresence>
-      <div>
-        <motion.div
-          initial={{ opacity: 1 }}
-          animate={{
-            opacity: 0,
-            transition: { delay: 0.2, duration: 0.8, ease: "easeInOut" },
-          }}
-          className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
-        />
-        {children}
-      </div>
+      <motion.div
+        initial={{ opacity: 1 }}
+        animate={{
+          opacity: 0,
+          transition: { delay: 0.2, duration: 0.8, ease: "easeInOut" },
+        }}
+        className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
+      />
+      {children}
     </AnimatePresence>
   );
 };
