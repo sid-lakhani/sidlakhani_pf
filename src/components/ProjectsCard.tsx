@@ -73,17 +73,17 @@ const ProjectsCard = () => {
           );
         })}
       </div>
-      <div className="xl:hidden inline-block">
-        <Carousel className="w-full max-w-xs">
+      <div className="xl:hidden flex ">
+        <Carousel className="w-full max-w-xs p-1">
           <CarouselContent>
             {projects.map((project, index) => {
               const isExpanded = expanded[index];
               return (
                 <CarouselItem key={index}>
-                  <div className="p-2">
+                  <div className="">
                     <Card
                       key={index}
-                      className="border-2 border-primary bg-accent-hover rounded-xl p-4"
+                      className="border-2 border-primary bg-accent-hover rounded-xl"
                     >
                       <CardHeader className="items-center">
                         <h1 className="text-3xl text-primary font-extrabold font-secondary">

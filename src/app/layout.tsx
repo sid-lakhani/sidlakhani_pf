@@ -5,7 +5,6 @@ import "./globals.css";
 //components
 import Header from "@/components/Header";
 import LayoutElements from "@/components/LayoutElements";
-import PageEffect from "@/components/animations/PageEffect";
 import PageTransition from "@/components/animations/PageTransition";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -71,11 +70,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jetbrainsMono.className} min-h-[100vh] -mt-8`}>
+      <body className={`${jetbrainsMono.className} ${kalam.variable} min-h-[100dvh] `}>
         <Header />
-        <PageEffect />
         <PageTransition>
-          <main className="min-h-[90dvh] xl:grid grid-cols-7 text-center xl:text-left gap-4 mx-16 md:mx-32 mt-8 content-center my-auto">
+          <main className="min-h-[100dvh] xl:grid grid-cols-7 text-center xl:text-left gap-4 mx-16 md:mx-32 items-center">
             <LayoutElements />
             {children}
           </main>

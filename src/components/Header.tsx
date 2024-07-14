@@ -5,7 +5,7 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="custom-blur p-8 md:p-10 xl:py-12 text-white fixed w-full top-0 left-0 border-b-2 border-accent xl:border-0 z-50">
+    <header className="custom-blur p-8 md:p-12 xl:pl-32 text-white fixed w-full top-0 left-0 border-b-2 border-accent xl:border-0 z-50">
       <div className="flex justify-between items-center px-4 md:px-8 xl:px-24">
         <Link href={"/"}>
           <div className="flex items-center">

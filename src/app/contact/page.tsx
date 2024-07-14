@@ -10,7 +10,7 @@ import { CiMail } from "react-icons/ci";
 export default function Contact() {
   useScrollToTop();
   return (
-    <main className="h-max w-[80vw] md:w-full xl:col-span-4 items-center justify-between mt-8 xl:mt-24">
+    <main className="xl:min-h-[580px] w-[100%] xl:col-span-4 items-center justify-between mt-8 xl:mt-0">
       <div className="flex flex-col items-center bg-primary border-2 border-accent rounded-3xl p-4 md:p-16 md:pb-12">
         <div className="flex flex-col items-center justify-evenly mt-4 xl:w-full">
           <h2 className="text-3xl xl:text-5xl text-accent font-secondary">
@@ -45,14 +45,14 @@ export default function Contact() {
               Send
             </Button>
           </form>
-          <div className="flex flex-row items-center m-6 mb-0 gap-2 xl:gap-4 text-accent bg-primary p-2 rounded-lg font-secondary text-md xl:text-xl">
+          <div className="flex flex-row items-center m-6 mb-0 gap-2 xl:gap-4 text-accent bg-primary p-2 rounded-lg font-secondary text-sm xl:text-xl">
             Support Me:
             <Link href="https://www.buymeacoffee.com/sidlakhani">
               <Image
                 src="/bmc_button.png"
                 alt="support me"
-                width={130}
-                height={100}
+                width={100}
+                height={80}
                 className="md:w-[150px]"
               />
             </Link>
