@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Kalam } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
 //components
-import Nav from "@/components/Nav";
-import PageTransition from "@/components/animations/PageTransition";
-import AnimationText from "@/components/animations/AnimationText";
 import Header from "@/components/Header";
+import Nav from "@/components/Nav";
+import AnimationText from "@/components/animations/AnimationText";
 import PageEffect from "@/components/animations/PageEffect";
+import PageTransition from "@/components/animations/PageTransition";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -26,6 +25,26 @@ const kalam = Kalam({
 
 export const metadata: Metadata = {
   title: "sidlakhani",
+  description: "Portfolio Website",
+  openGraph: {
+    title: "sidlakhani",
+    description: "Portfolio Website",
+    images: [
+      {
+        url: "/me.jpg",
+        width: 384,
+        height: 384,
+        alt: "sidlakhani",
+      },
+    ],
+    url: new URL("https://sidlakhani.tech"),
+  },
+  metadataBase: new URL("https://sidlakhani.tech"),
+  icons: "/me.jpg",
+  manifest: "/site.webmanifest",
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
@@ -35,19 +54,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <title>sidlakhani</title>
-        <meta name="description" content="Portfolio Website" />
-        <link rel="icon" href="/public/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/public/me.jpg" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta property="og:title" content="sidlakhani" />
-        <meta property="og:description" content="Portfolio Website" />
-        <meta property="og:image" content="https://sidlakhani.tech/_next/image?url=%2Fme.jpg&w=384&q=75" />
-        <meta property="og:url" content="https://sidlakhani.tech" />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-      <body className={`${jetbrainsMono.variable} ${kalam.variable}`}>
+      <body className={jetbrainsMono.className}>
         <Header />
         <PageEffect />
         <PageTransition>
