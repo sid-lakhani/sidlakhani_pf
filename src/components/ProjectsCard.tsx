@@ -20,7 +20,7 @@ const ProjectsCard = () => {
   };
 
   return (
-    <main>
+    <main className="flex flex-col items-center">
       <div className="hidden xl:flex flex-col gap-6 mx-12">
         {projects.map((project, index) => {
           const isExpanded = expanded[index];
