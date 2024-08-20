@@ -65,7 +65,7 @@
 }
 @media screen and (max-width: 1280px) {
   .truncate-description {
-    -webkit-line-clamp: 4;
-    line-clamp: 4;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
   }
 }

@@ -27,10 +27,10 @@ const ProjectsCard = () => {
           return (
             <Card
               key={index}
-              className="border-2 border-primary bg-accent-hover rounded-xl p-4"
+              className="border-2 border-black bg-primary/50 rounded-xl p-4"
             >
               <CardHeader className="items-center">
-                <h1 className="text-4xl text-primary font-extrabold font-secondary">
+                <h1 className="text-4xl text-accent font-extrabold font-secondary">
                   {project.title}
                 </h1>
               </CardHeader>
@@ -40,11 +40,11 @@ const ProjectsCard = () => {
                   alt={project.title}
                   width={200}
                   height={200}
-                  className="w-1/4 border-2 border-primary rounded-xl"
+                  className="w-1/4 border-2 border-black rounded-xl"
                 />
                 <div className="flex flex-col w-2/4 gap-4">
                   <p
-                    className={`text-md text-primary ${isExpanded ? '' : 'truncate-description'}`}
+                    className={`text-md text-white ${isExpanded ? '' : 'truncate-description'}`}
                     onClick={() => handleToggle(index)}
                   >
                     {project.description}
@@ -53,7 +53,7 @@ const ProjectsCard = () => {
                     {project.category.map((category, catIndex) => (
                       <span
                         key={catIndex}
-                        className="bg-primary text-white text-xs font-semibold px-2 py-1 rounded"
+                        className="bg-accent text-black text-xs font-semibold px-2 py-1 rounded"
                       >
                         {category}
                       </span>
@@ -61,10 +61,10 @@ const ProjectsCard = () => {
                   </div>
                 </div>
                 <div className="flex flex-col w-1/4 gap-4 items-center justify-normal text-xl">
-                  <Link href={project.link} className="text-primary">
+                  <Link href={project.link} className="text-accent">
                     <FaExternalLinkAlt />
                   </Link>
-                  <Link href={project.github} className="text-primary">
+                  <Link href={project.github} className="text-accent">
                     <FaGithub />
                   </Link>
                 </div>
