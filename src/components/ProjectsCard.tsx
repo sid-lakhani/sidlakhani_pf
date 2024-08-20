@@ -44,7 +44,9 @@ const ProjectsCard = () => {
                 />
                 <div className="flex flex-col w-2/4 gap-4">
                   <p
-                    className={`text-md text-white ${isExpanded ? '' : 'truncate-description'}`}
+                    className={`text-md text-white ${
+                      isExpanded ? "" : "truncate-description"
+                    }`}
                     onClick={() => handleToggle(index)}
                   >
                     {project.description}
@@ -99,7 +101,9 @@ const ProjectsCard = () => {
                           className="border-2 border-primary rounded-xl"
                         />
                         <p
-                          className={`text-md text-primary ${isExpanded ? '' : 'truncate-description'}`}
+                          className={`text-md text-primary ${
+                            isExpanded ? "" : "truncate-description"
+                          }`}
                           onClick={() => handleToggle(index)}
                         >
                           {project.description}
@@ -132,6 +136,11 @@ const ProjectsCard = () => {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+      </div>
+      <div>
+        <p className="text-center text-white font-semibold text-lg m-8">
+          More projects coming soon!
+        </p>
       </div>
     </main>
   );
