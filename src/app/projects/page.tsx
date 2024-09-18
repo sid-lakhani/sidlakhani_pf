@@ -2,8 +2,10 @@
 import ProjectsCard from "@/components/ProjectsCard";
 import { useScrollToTop } from "@/hooks/useScrollToTop";
 
-export default function Projects() {
+export default async function Projects() {
   useScrollToTop();
+
+  await new Promise((resolve) => setTimeout(resolve, 500)); 
   return (
     <div className="xl:col-span-4 flex-col items-center justify-between mt-8 xl:mt-0">
       <h2 className="inline-block xl:hidden text-4xl md:text-5xl font-secondary mt-8">Projects</h2>
