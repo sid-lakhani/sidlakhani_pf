@@ -1,8 +1,8 @@
-import { FaHtml5, FaPython, FaReact, FaCss3Alt, FaGithub } from "react-icons/fa";
-import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiNextdotjs, SiTypescript, SiCanva, SiClerk } from "react-icons/si";
+import { FaCss3Alt, FaGithub, FaHtml5, FaPython, FaReact } from "react-icons/fa";
+import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { PiFileCppFill } from "react-icons/pi";
+import { RiSupabaseLine, RiTailwindCssFill } from "react-icons/ri";
+import { SiCanva, SiClerk, SiNextdotjs, SiTypescript, SiUnrealengine } from "react-icons/si";
 
 export const skills = [
   {
@@ -61,6 +61,11 @@ export const skills = [
     category: "backend",
   },
   {
+    name: "Supabase",
+    logo: <RiSupabaseLine className="text-3xl text-accent" />,
+    category: "backend",
+  },
+  {
     name: "GitHub",
     logo: <FaGithub className="text-3xl text-accent" />,
     category: "misc",
@@ -70,6 +75,11 @@ export const skills = [
     logo: <SiCanva className="text-3xl text-accent" />,
     category: "misc",
   },
+  {
+    name: "Unreal Engine",
+    logo: <SiUnrealengine className="text-3xl text-accent" />,
+    category: "misc",
+  }
 ];
 
 export const frontendSkills = skills.filter(skill => skill.category === "frontend");
