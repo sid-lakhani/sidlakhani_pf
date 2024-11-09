@@ -9,6 +9,13 @@ export const projects = [
     category: ["Next.js", "React", "Tailwind CSS", "Clerk"],
   },
   {
+    title: "Facial-Emotion Recognition",
+    description:
+      "A facial emotion recognition deep learning model that detects emotions of a person using their webcam.",
+    github: "https://github.com/sid-lakhani/fer-ml",
+    category: ["Python", "Tensorflow", "OpenCV"],
+  },
+  {
     title: "TaskCanvas",
     description:
       "A basic To-Do website that allows user to add, delete and mark tasks as completed.",

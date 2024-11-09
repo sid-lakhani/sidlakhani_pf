@@ -35,13 +35,17 @@ const ProjectsCard = () => {
                 </h1>
               </CardHeader>
               <CardContent className="flex flex-row gap-8 items-center justify-center">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={200}
-                  height={200}
-                  className="w-1/4 border-2 border-black rounded-xl"
-                />
+              {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={200}
+                    height={200}
+                    className="w-1/4 border-2 border-black rounded-xl"
+                  />
+                ) : (
+                  <div className="w-1/4 bg-inherit"></div>
+                )}
                 <div className="flex flex-col w-2/4 gap-4">
                   <p
                     className={`text-md text-white ${
@@ -63,9 +67,11 @@ const ProjectsCard = () => {
                   </div>
                 </div>
                 <div className="flex flex-col w-1/4 gap-4 items-center justify-normal text-xl">
-                  <Link href={project.link} className="text-accent">
-                    <FaExternalLinkAlt />
-                  </Link>
+                  {project.link && (
+                    <Link href={project.link} className="text-accent">
+                      <FaExternalLinkAlt />
+                    </Link>
+                  )}
                   <Link href={project.github} className="text-accent">
                     <FaGithub />
                   </Link>
@@ -93,13 +99,15 @@ const ProjectsCard = () => {
                         </h1>
                       </CardHeader>
                       <CardContent className="flex flex-col gap-6 items-center justify-center">
-                        <Image
-                          src={project.image}
-                          alt={project.title}
-                          width={150}
-                          height={150}
-                          className="border-2 border-primary rounded-xl"
-                        />
+                        {project.image && (
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            width={150}
+                            height={150}
+                            className="border-2 border-primary rounded-xl"
+                          />
+                        )}
                         <p
                           className={`text-md text-primary ${
                             isExpanded ? "" : "truncate-description"
@@ -119,9 +127,11 @@ const ProjectsCard = () => {
                           ))}
                         </div>
                         <div className="flex flex-row gap-6 items-center justify-center text-xl">
-                          <Link href={project.link} className="text-primary">
-                            <FaExternalLinkAlt />
-                          </Link>
+                          {project.link && (
+                            <Link href={project.link} className="text-primary">
+                              <FaExternalLinkAlt />
+                            </Link>
+                          )}
                           <Link href={project.github} className="text-primary">
                             <FaGithub />
                           </Link>
